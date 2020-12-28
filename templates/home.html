@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+    <h1>HOME</h1>
+    <button id="button">Submit</button>
+
+<script>
+    const button = document.getElementById('button');
+    button.addEventListener("click", (evt)=>{
+        evt.preventDefault();
+        const randomNumber = Math.floor(Math.random() * 100);
+        if(randomNumber >= 50){
+            window.location.href += 'heads'
+        } else {
+            window.location.href += "tails"
+        };
+
+    })
+</script>    
+</body>
+</html>
